@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,400);
+
+$main-bg-color: #f1f2f0;
+$accent-blue: #37bbe4;
+$accent-gray: #e1e0dd;
+$accent-black: #35342f;
+$accent-orange: #ec6b2d;
+$accent-red: #dd6464;
+
+body {
+  background-color: $main-bg-color;
+  color: $accent-black;
+
+  font-family: 'Raleway', sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+.main-app-container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 700px) {
+    flex-direction: row;
+  }
+}
+
+.main-app-nav {
+  font-size: 1em;
+  width: 100%;
+  background-color: greenyellow;
+  padding: 1em;
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  li {
+    border-bottom: 1px dotted darkolivegreen;
+    padding: 2px;
+  }
+
+  @media (min-width: 600px) {
+    width: 50%;
+  }
+}
+
+.detail-container {
+  width: 100%;
+  padding: 1em;
+
+  ul {
+    list-style-type: square;
+    list-style-position: inside;
+    padding-left: 0;
+  }
+
+  @media (min-width: 600px) {
+    width: 50%;
+  }
+}
+
+input {
+  height: 24px;
+}
+
+button {
+  background-color: #CCC;
+  border: none;
+  height: 30px;
+  margin-left: 1em;
+  margin-right: 1em;
+
+  &:hover {
+    background-color: $accent-gray;
+  }
+}
+
+
